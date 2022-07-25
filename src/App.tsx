@@ -19,6 +19,13 @@ let Myidentity:<Type>(arg:Type) => Type = identity;
 let identi:<input>(arg:input) => input = identity;
 
 let ide : {<Type>(arg:Type):Type}  = identity;
+
+
+interface id<Type>{
+  (arg:Type) : Type;
+}
+let number : id<string> = identity;
+
   return (
     <div className="App">
    
