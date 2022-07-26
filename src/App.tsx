@@ -25,6 +25,7 @@ interface id<Type>{
   (arg:Type) : Type;
 }
 let number : id<string> = identity;
+let name:id<string> = identity;
 
   return (
     <div className="App">
